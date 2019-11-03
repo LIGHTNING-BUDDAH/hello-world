@@ -16,9 +16,9 @@ cout << "" << endl;
  char direction;
  cin >> direction;
 
- while(direction != 'Q')
+ while(direction != 'q')
  {
-if(direction == 'U')
+if(direction == 'u')
 {
 Y = Y+1;
 if(Y==11)
@@ -28,7 +28,7 @@ if(Y==11)
 
 
 }
-else if (direction == 'D')
+else if (direction == 'd')
 {
 Y = Y-1;
 if(Y==0)
@@ -37,7 +37,7 @@ if(Y==0)
 }
 
  }
-else if (direction == 'L')
+else if (direction == 'l')
 {
 X = X-1;
 if(X==0)
@@ -46,7 +46,7 @@ if(X==0)
 }
 
  }
- else if (direction == 'R')
+ else if (direction == 'r')
 {
 X = X+1;
 if(X==11)
@@ -56,7 +56,7 @@ if(X==11)
 
  }
  else {
-if(direction == 'Q')
+if(direction == 'q')
 
 cout << " game over" << endl;
 
