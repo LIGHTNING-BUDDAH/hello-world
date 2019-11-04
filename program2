@@ -1,0 +1,120 @@
+#include <iostream>
+using namespace std;
+
+class Colors{
+  public:
+
+  int R , G , B, L;
+
+  
+  
+  void Print(int R,  int G, int B, int L)
+  {
+    
+    R = 254;
+ G = 2;
+ B = 100;
+ L = (0.2126*R + 0.7152*G + 0.0722*B);
+ int iR = (255-R);
+  int iG= (255-G);
+  int iB= (255-B);
+ cout << " The colors are: " << R << " " << G << " " << B << " " << L << endl;
+cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+
+int Pick;
+cout << "Please enter in a number " << endl;
+cin >> Pick;
+while(Pick != 8)
+{
+  cout << "Please enter in a number " << endl;
+cin >> Pick;
+
+switch(Pick){
+
+
+{
+  case 1:
+  cout << "You chose 1 " << endl;
+  R =R+=1;
+  cout << " The colors are: " << R << " " << G << " " << B << " " << L << endl;
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+break;
+  case 2:
+  cout << "You chose 1 " << endl;
+  R =R-=1;
+   cout << " The colors are: " << R << " " << G << " " << B << " " << L << endl;
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+break;
+  case 3:
+  cout << "You chose 1 " << endl;
+  G =G+=1;
+   cout << " The colors are: " << R << " " << G << " " << B << " " << L << endl;
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+break;
+  case 4:
+  cout << "You chose 1 " << endl;
+  G =G-=1;
+   cout << " The colors are: " << R << " " << G << " " << B << " " << L << endl;
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+break;
+  case 5:
+  cout << "You chose 1 " << endl;
+  B =B+=1;
+   cout << " The colors are: " << R << " " << G << " " << B << " " << L << endl;
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+break;
+  case 6:
+  cout << "You chose 1 " << endl;
+  B =B-=1;
+   cout << " The colors are: " << R << " " << G << " " << B << " " << L << endl;
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+break;
+  case 7:
+  cout << "You chose PRINT INVERSE " << endl;
+  
+  
+  
+   cout << " The colors are: " << iR << " " << iG << " " << iB << " " << L << endl;
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+break;
+    case 8:
+  cout << "You quit" << endl;
+  
+
+  cout << " 1) Increase Red, 2) Decrease Red, 3) Increase Green, 4) Decrease Green, 5) Increase Blue, 6) Decrease Blue, 7) Print the inverse, or 8) Quit " << endl;
+   break;
+   default:
+
+   cout << "done" << endl;
+   break;
+}
+
+}
+
+
+  }
+
+
+
+
+}
+
+};
+int main() {
+  int iR;
+  int iG;
+  int iB;
+
+  int R, G, B, L;
+Colors myFirst;
+
+myFirst.Print( R, G, B,L);
+}
+
